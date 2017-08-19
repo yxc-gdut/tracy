@@ -1,0 +1,45 @@
+div(class="head")
+    div(class="head_top")
+        div(class="logo")
+            img(src="/img/logo.png")
+        div(class="logo_title")
+            span 动人的微笑由洁白明亮的牙齿开始!
+    div(class="nav" id="nav")
+        div(class="moveItem" id="moveItem")
+        ul(class="navList" id="navList")
+            li(class="navItem #{selected === 'index' ? 'selected' : ''}")
+                a(href="/")
+                    span.nav-mainText 首页
+                    span.nav-subText HOME
+            li(class="navItem #{selected === 'about' ? 'selected' : ''}")
+                a(href="/about")
+                    p.nav-mainText 关于我们
+                    span.nav-subText ABOUT US
+            li(class="navItem #{selected === 'product' ? 'selected' : ''}")
+                a(href="/product")
+                    span.nav-mainText 关于产品
+                    span.nav-subText PRODUCTS
+            li(class="navItem #{selected === 'advantage' ? 'selected' : ''}")
+                a(href="/advantage")
+                    span.nav-mainText 我们的优势
+                    span.nav-subText ADVANTAGE
+            li(class="navItem #{selected === 'story' ? 'selected' : ''}")
+                a(href="/story")
+                    span.nav-mainText 我们的故事
+                    span.nav-subText OUR STORY
+            li(class="navItem #{selected === 'join' ? 'selected' : ''}")
+                a(href="/join")
+                    span.nav-mainText 招商加盟
+                    span.nav-subText JOIN
+            li(class="navItem #{selected === 'news' ? 'selected' : ''}")
+                a(href="/news")
+                    span.nav-mainText 新闻中心
+                    span.nav-subText NEWS
+            li(class="navItem #{selected === 'online' ? 'selected' : ''}")
+                a(href="/online")
+                    span.nav-mainText 在线咨询
+                    span.nav-subText ONLINE
+            li(class="navItem #{selected === 'contact' ? 'selected' : ''}")
+                a(href="/contact")
+                    span.nav-mainText 联系我们
+                    span.nav-subText CONTACT

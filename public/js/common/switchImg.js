@@ -1,7 +1,7 @@
 $(function () {
     var $location = $("#location"),
-        duration = 3000,
-        animateDuration = 500,
+        duration = 6000,
+        animateDuration = 800,
         imgNum = $(".imgItem").length,
         rollHandler = null;
 
