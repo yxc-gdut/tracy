@@ -27,6 +27,7 @@ body {
     text-align: right;
 }
 
+/* 导航栏 */
 .nav {
     display: block;
     position: relative;
@@ -96,19 +97,63 @@ body {
     height: 80px;
 }
 
+/* 底部 */
 .foot {
-    height: 100px;
-    margin-top: 30px;
-    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    /*border-top: 1px solid #ddd;*/
+    background-color: #eeeaea;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.foot_c {
+.f_center {
     display: block;
-    text-align: center;
-    padding-top: 50px;
+    overflow: hidden;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
 }
 
-.floatWin {
+.f_left {
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: url("/img/foot-logo.jpg") no-repeat;
+}
+
+.f_middle {
+    overflow: hidden;
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.f_link {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.f_link_item {
+    display: inline-block;
+    line-height: 20px;
+    height: 20px;
+    margin-right: 8px;
+    padding-right: 8px;
+    border-right: 1px solid #dddddd;
+    color: #af9e83;
+    text-decoration: none;
+}
+
+.f_info {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #999;
+}
+
+/* 浮窗 */
+.fltWin {
     position: fixed;
     left: 6px;
     bottom: 100px;
