@@ -22,7 +22,7 @@ body {
 }
 
 .logo_title {
-    color: gold;
+    color: #f5dfc7;
     font-size: 12px;
     text-align: right;
 }
@@ -32,7 +32,7 @@ body {
     display: block;
     position: relative;
     text-align: center;
-    background: #eeeaea;
+    background: #232321;
     margin-top: 16px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .selected {
-    background-color: #af9e83; /*#b6a168*/
+    background-color: #f5dfc7; /*#b6a168*/
 }
 
 .navItem a {
@@ -62,37 +62,37 @@ body {
 
 .nav-mainText {
     display: block;
-    color: #af9e83;
+    color: #f5dfc7;
     transition-duration: 500ms;
     transition-property: all;
 }
 
 .nav-subText {
     display: inline-block;
-    color: #af9e83;
+    color: #f5dfc7;
     transition-duration: 500ms;
     transition-property: all;
 }
 
 .navItem a:hover .nav-mainText {
-    color: #eee;
+    color: #464642;
 }
 
 .navItem a:hover .nav-subText {
-    color: #eee;
+    color: #464642;
 }
 
 .selected .nav-mainText {
-    color: #eee;
+    color: #464642;
 }
 
 .selected .nav-subText {
-    color: #eee;
+    color: #464642;
 }
 
 .moveItem {
     position: absolute;
-    background: #af9e83;
+    background: #f5dfc7;
     top: 0;
     height: 80px;
 }
@@ -101,7 +101,7 @@ body {
 .foot {
     margin-top: 20px;
     /*border-top: 1px solid #ddd;*/
-    background-color: #eeeaea;
+    background-color: #232321;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -141,7 +141,7 @@ body {
     margin-right: 8px;
     padding-right: 8px;
     border-right: 1px solid #dddddd;
-    color: #af9e83;
+    color: #f5dfc7;
     text-decoration: none;
 }
 
