@@ -1,0 +1,262 @@
+/* 品牌 */
+.about_right {
+    float: right;
+    padding: 16px 0 0 16px;
+}
+
+.about_left {
+    float: left;
+    width: 50%;
+}
+
+.about_desc {
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 21px;
+    color: #535352;
+}
+
+.aboutPic {
+    background: url("/img/about.jpg");
+    width: 423px;
+    height: 317px;
+}
+
+/* 品牌优势 */
+.adv_lb {
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    text-align: left;
+    background: #fff;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.adv_title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.adv_desc {
+    color: #535353;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+.adv_desc p {
+    text-indent: 2em;
+}
+
+.adv_content {
+    text-align: center;
+}
+
+/* 三大优势 */
+.three_content {
+    text-align: center;
+}
+
+.three_left {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #f7d08a;
+    width: 320px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 40px;
+}
+
+.three_right {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #e3f09b;
+    width: 320px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+.three_title {
+    /*text-align: left;*/
+}
+
+.three_desc {
+    color: #535353;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+.three_pic1 {
+    background: url("/img/about.jpg");
+    background-size: 320px;
+    width: 320px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+.three_pic2 {
+    background: url("/img/about.jpg");
+    background-size: 320px;
+    width: 320px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+.three_pic3 {
+    background: url("/img/about.jpg");
+    background-size: 320px;
+    width: 320px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+/* 系统优势 */
+.sys_content {
+    padding-top: 20px;
+}
+
+.sysItem {
+    margin-top: 16px;
+    position: relative;
+    text-align: center;
+}
+
+.sys_left {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #f79f79;
+    width: 320px;
+    height: 80px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-right: 60px;
+    line-height: 80px;
+    margin-right: 120px;
+    color: #535352;
+}
+
+.sys_middle {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -50px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.sys_right {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 320px;
+    height: 80px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    line-height: 80px;
+    color: #535352;
+    border: 1px solid #dddddd;
+}
+
+.sys_left_text {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.sys_left_logo {
+    position: absolute;
+    text-align: center;
+    top: -14px;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    color: #ea5154;
+    background-color: #fff;
+}
+
+.sys_right_logo {
+    position: absolute;
+    text-align: center;
+    top: -14px;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    color: gray;
+    background-color: #fff;
+}
+
+.bold {
+    color: #ea5154;
+}
+
+.bg_yellow {
+    background-color: #f7d08a;
+}
+
+.bg_white {
+    background-color: #e3f09b;
+}
+
+.bg_blue {
+    background-color: #87b6a7;
+}
+
+.bg_pink {
+    background-color: #f79f79;
+}
+
+/* 服务优势 */
+.service_content {
+    padding: 0 0 30px 0;
+    text-align: center;
+    line-height: 0;
+    font-size: 0;
+}
+
+.service_right {
+    display: inline-block;
+    padding: 20px 8px;
+}
+
+.service_left {
+    display: inline-block;
+    padding: 20px 8px;
+}
+
+.service_info {
+    text-align: left;
+}
+
+.service_info_title {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.service_info_desc {
+    font-size: 14px;
+    line-height: 28px;
+    color: #535352;
+}
+
+.service_foot {
+    border-right: none;
+    border-radius: 0;
+}

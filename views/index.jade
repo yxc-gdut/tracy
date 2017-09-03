@@ -3,6 +3,7 @@ extends layout/layout
 block css
     link(rel='stylesheet', href='/css/common/switchImg.css')
     link(rel='stylesheet', href='/css/card.css')
+    link(rel='stylesheet', href='/css/index.css')
 
 block content
     div.content
@@ -20,7 +21,7 @@ block content
                     li.location_item(id="lo_switchImg_1" data-id="switchImg_1") 2
                     li.location_item(id="lo_switchImg_2" data-id="switchImg_2") 3
 
-        //品牌
+        // 品牌
         div.card
             div.center
                 div.card_title
@@ -38,7 +39,7 @@ block content
                         div.aboutPic
                 div.card_foot
 
-        //品牌优势
+        // 品牌优势
         div.card.card_pink
             div.center
                 div.card_title
@@ -86,7 +87,7 @@ block content
                                 li.adv_item 非治疗式牙齿美白，过程舒适，客户在美白时无任何疼痛反应。
                 div.card_foot
 
-        //三大优势
+        // 三大优势
         div.card
             div.center
                 div.card_title
@@ -120,6 +121,90 @@ block content
                                 div.three_pic3
                 div.card_foot
 
+        // 系统优势
+        div.card
+            div.center
+                div.card_title
+                    a.c_t_link(href='/advantage')
+                        span.c_t_main 系统优势
+                        span.c_t_sub SYSTEM ADVANTAGE
+                    div.c_t_bord
+                div.card_content
+                    p.c_c_sub 成分安全健康、不损害牙齿结构、零损伤、无刺激和牙龈保护剂说再见、简单、易操作。MISSKING得到安全和效果认证的先进美白系统，纯天然矿植物美白剂安全、高效；植物牙齿美白理念环保、快捷。
+                    div.sys_content
+                        div.sysItem
+                            div.sys_left
+                                div.sys_left_logo 瑞美斯
+                                div.sys_left_text
+                                    span 通过
+                                    span.bold 美白剂里的氧
+                                    span 进入牙齿内部祛除色素沉着 长期使用的话，不但不会对牙齿造成伤害，还 能给口腔杀菌，达到保护牙齿的功效
+                            div.sys_middle.bg_yellow 美白原理
+                            div.sys_right
+                                div.sys_right_logo 其他产品
+                                div.sys_left_text 通过酸性物质漂白牙齿的牙釉质来达到美白效果,长期接受这种美白的话,会导致牙齿表面的钙被分解掉从而对牙齿造成伤害
+                        div.sysItem
+                            div.sys_left
+                                div.sys_left_logo 瑞美斯
+                                div.sys_left_text 美白管理一次25分钟，可以连续做3次，让牙齿在打开牙小管缝隙的状态下充分与美白剂发挥功效，达到由内而外的透亮白皙。
+                            div.sys_middle.bg_white 美白时间
+                            div.sys_right
+                                div.sys_right_logo 其他产品
+                                div.sys_left_text 不能超过15分钟.原因是用漂白来达到美白牙齿的功效，美白的时间越长对牙齿的伤害就越大。所以只能不超过15分钟的美白时间
+                        div.sysItem
+                            div.sys_left
+                                div.sys_left_logo 瑞美斯
+                                div.sys_left_text
+                                    span 美白效果可持续在
+                                    span.bold 1—2年
+                            div.sys_middle.bg_blue 效果持续时间
+                            div.sys_right
+                                div.sys_right_logo 其他产品
+                                div.sys_left_text 一般是6个月左右
+                        div.sysItem
+                            div.sys_left
+                                div.sys_left_logo 瑞美斯
+                                div.sys_left_text
+                                    span 针对
+                                    span.bold 亚洲人
+                                    span 的牙齿结构
+                            div.sys_middle.bg_pink 客户人群
+                            div.sys_right
+                                div.sys_right_logo 其他产品
+                                div.sys_left_text 针对西方人的牙齿结构
+                div.card_foot
+
+
+        // 服务优势
+        div.card.card_pink
+            div.center
+                div.card_title
+                    a.c_t_link(href='/advantage')
+                        span.c_t_main 服务优势
+                        span.c_t_sub SERVICE ADVANTAGE
+                    div.c_t_bord
+                div.card_content.service_content
+                    div.service_right
+                        div.service_info
+                            div.service_info_title 最专业的加盟培训
+                            div.service_info_desc The most professional to join the training
+                        img(src='/img/service1.jpg')
+                    div.service_left
+                        div.service_info
+                            div.service_info_title 最真诚的助教团队
+                            div.service_info_desc The most sincere teaching assistant team
+                        img(src='/img/service2.png')
+                    div.service_right
+                        div.service_info
+                            div.service_info_title 最舒适的培训环境
+                            div.service_info_desc The most comfortable training environment
+                        img(src='/img/service3.jpg')
+                    div.service_left
+                        div.service_info
+                            div.service_info_title 最贴心的下店扶持
+                            div.service_info_desc The most intimate store support
+                        img(src='/img/service4.png')
+                div.card_foot.service_foot
 
 
 
