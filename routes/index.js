@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Tracy', selected:'index' });
+  res.render('index', { title: 'THEMIS 瑞美斯', selected:'index' });
 });
 
 router.post('/api/*', function(req, res, next) {
