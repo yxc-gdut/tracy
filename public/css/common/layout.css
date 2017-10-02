@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "微软雅黑";
+    background-color: #fdfdfd;
 }
 
 .head {
@@ -15,6 +16,7 @@ body {
 .head_top {
     max-width: 1024px;
     margin: 0 auto;
+    position: relative;
 }
 
 .logo {
@@ -25,6 +27,18 @@ body {
     color: #f5dfc7;
     font-size: 12px;
     text-align: right;
+}
+
+.logo_phone {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.logo_phoneText {
+    float: right;
+    color: #535352;
+    margin-left: 10px;
 }
 
 /* 导航栏 */

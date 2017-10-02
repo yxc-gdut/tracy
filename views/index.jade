@@ -4,6 +4,7 @@ block css
     link(rel='stylesheet', href='/css/common/switchImg.css')
     link(rel='stylesheet', href='/css/card.css')
     link(rel='stylesheet', href='/css/index.css')
+    link(rel='stylesheet', href='/css/libs/jquery.mCustomScrollbar.min.css')
 
 block content
     div.content
@@ -33,8 +34,8 @@ block content
                     div.about_left
                         p.c_c_title 源自美国牙齿美白技术
                         p.c_c_sub Tooth whitening technology from the United States
-                        p.c_c_title THEMIS美白管理系统
-                        p.about_desc THEMIS 源自于美国，自创建起因操作简单、安全、高效等优势，被大众所广泛接受。在中国，作为美容项目正在渐渐崛起，市场潜力巨大。 THEMIS，提供的不仅是优质的产品，更是一个植物牙齿美白招商加盟平台。THEMIS以其专业的技术，优质的产品，广阔的市场前景以及有力的加盟保障。为有梦想、敢拼敢闯的有志青年提供一个可以实现梦想的平台。在THEMIS，我们每个人的梦想，都可以从“齿”启航。
+                        p.c_c_title THEMIS瑞美斯美白管理系统
+                        p.about_desc THEMIS瑞美斯 源自于美国，自创建起因操作简单、安全、高效等优势，被大众所广泛接受。在中国，作为美容项目正在渐渐崛起，市场潜力巨大。 THEMIS瑞美斯，提供的不仅是优质的产品，更是一个植物牙齿美白招商加盟平台。THEMIS瑞美斯以其专业的技术，优质的产品，广阔的市场前景以及有力的加盟保障。为有梦想、敢拼敢闯的有志青年提供一个可以实现梦想的平台。在THEMIS瑞美斯，我们每个人的梦想，都可以从“齿”启航。
                     div.about_right
                         div.aboutPic
                 div.card_foot
@@ -71,7 +72,7 @@ block content
                                 li.adv_item 于现有更好服务客户，快速吸收新客源。
                         div.adv_lb
                             div.adv_title 品牌市场前景广阔
-                            ol.adv_desc
+                            ol.adv_desc.js_scrollbar
                                 li.adv_item 从市场需求看：
                                     p 牙齿美白正成为一种时尚。在美国，美白牙齿是一种美容而非治疗，美国人在牙齿美白的消费上一年已近100亿。而在中国13亿人口中，烟民、牙齿发育不全和各种原因引起的牙齿发黄发黑问题比比皆是。这在中国是一个美容空白点，有巨大的市场利润空间。
                                     p 我公司就此对此项目将提供系统的全套培训，让你在牙齿美白营销行业抓住这个时代最好的契机，成为招牌项目，迅速的达到资金翻倍的盈利状况。
@@ -96,13 +97,13 @@ block content
                         span.c_t_sub ADVANTAGE
                     div.c_t_bord
                 div.card_content
-                    p.c_c_title 美国THEMIS牙齿美白管理系统
+                    p.c_c_title 美国THEMIS瑞美斯牙齿美白管理系统
                     p.c_c_sub Tooth whitening management system
                     div.three_content
                         div
                             div.three_left
                                 p.c_c_title.three_title 安全
-                                p.three_desc THEMIS品牌已通过美国FDA认证
+                                p.three_desc THEMIS瑞美斯品牌已通过美国FDA认证
                             div.three_right
                                 div.three_pic1
                         div
@@ -134,7 +135,7 @@ block content
                     div.sys_content
                         div.sysItem
                             div.sys_left
-                                div.sys_left_logo 瑞美斯
+                                div.sys_left_logo Themis 瑞美斯
                                 div.sys_left_text
                                     span 通过
                                     span.bold 美白剂里的氧
@@ -145,7 +146,7 @@ block content
                                 div.sys_left_text 通过酸性物质漂白牙齿的牙釉质来达到美白效果,长期接受这种美白的话,会导致牙齿表面的钙被分解掉从而对牙齿造成伤害
                         div.sysItem
                             div.sys_left
-                                div.sys_left_logo 瑞美斯
+                                div.sys_left_logo Themis 瑞美斯
                                 div.sys_left_text 美白管理一次25分钟，可以连续做3次，让牙齿在打开牙小管缝隙的状态下充分与美白剂发挥功效，达到由内而外的透亮白皙。
                             div.sys_middle.bg_white 美白时间
                             div.sys_right
@@ -153,7 +154,7 @@ block content
                                 div.sys_left_text 不能超过15分钟.原因是用漂白来达到美白牙齿的功效，美白的时间越长对牙齿的伤害就越大。所以只能不超过15分钟的美白时间
                         div.sysItem
                             div.sys_left
-                                div.sys_left_logo 瑞美斯
+                                div.sys_left_logo Themis 瑞美斯
                                 div.sys_left_text
                                     span 美白效果可持续在
                                     span.bold 1—2年
@@ -163,7 +164,7 @@ block content
                                 div.sys_left_text 一般是6个月左右
                         div.sysItem
                             div.sys_left
-                                div.sys_left_logo 瑞美斯
+                                div.sys_left_logo Themis 瑞美斯
                                 div.sys_left_text
                                     span 针对
                                     span.bold 亚洲人
@@ -206,7 +207,61 @@ block content
                         img(src='/img/service4.png')
                 div.card_foot.service_foot
 
-
+        // 三大优势
+        div.card
+            div.center
+                div.card_title
+                    a.c_t_link(href='/join')
+                        span.c_t_main 加盟优势
+                        span.c_t_sub ALLIANCE ADVANTAGE
+                    div.c_t_bord
+                div.card_content
+                    div.join_content
+                        div.join_question
+                            p.join_title 想加盟瑞美斯牙齿美白管理系统
+                            div.join_desc 您是否还有这些犹豫？
+                            img.questionImg(src="/img/question.jpg")
+                            div.join_row.row1
+                                div.j_q_item_left
+                                    .j_q_i_block.bg_color1 担心产品来源
+                                div.j_q_item_right
+                                    .j_q_i_block.bg_color4 是否美国原装进口
+                            div.join_row.row2
+                                div.j_q_item_left
+                                    .j_q_i_block.bg_color2 怕没经验
+                                div.j_q_item_right
+                                    .j_q_i_block.bg_color5 怕不会管理
+                            div.join_row.row3
+                                div.j_q_item_left
+                                    .j_q_i_block.bg_color3 怕不会推广
+                                div.j_q_item_right
+                                    .j_q_i_block.bg_color6 怕同行竞争
+                        div.join_solution
+                            div.join_solution_title 你所担心的问题，我们已经替您想到
+                            div.join_solution_desc 并拿出实际的求解决方案全程协助。
+                            div.join_solution_text You are worried about the problem, THEMIS has for you to think of, And come up with practical solutions to help.
+                        div.join_adv
+                            div.join_title
+                                img.join_adv_logo(src='/img/logo_eng.png')
+                                span &nbsp;&nbsp;加盟优势
+                            div.join_adv_c
+                                div.join_adv_c_left
+                                    img(src="/img/img-about.jpg")
+                                div.join_adv_c_right
+                                    p.j_a_c_text 1.结合欧美韩的牙齿美白技术传授，不定期安排赴美派克顿总部学习参观镀金。
+                                    p.j_a_c_eng In order to combine western and Korea teeth whitening technology teaching, from time to time, the United States headquarters study tour gold paxton.
+                                    p.j_a_c_text 2.无价的微信营销推广培训，让你在短时间内找寻精准客户，实现投入翻倍的高额回报。
+                                    p.j_a_c_eng Priceless WeChat marketing training, let you in a short period of time to find accurate customers, to achieve the high return of investment doubled.
+                                    p.j_a_c_text 3.定期开展品牌学习交流会，分享品牌发展经验。
+                                    p.j_a_c_eng Regularly carry out the brand learning exchange, share brand development experience.
+                                    p.j_a_c_text 4.定期开设THEMIS瑞美斯牙齿美白专业知识培训。
+                                    p.j_a_c_eng Regular opening of THEMIS teeth whitening professional knowledge training.
+                                    div.j_a_c_text
+                                        div.j_a_c_phone
+                                            p.f12 加盟热线：
+                                            p.f20 0750-2203238
+                                        img.j_a_c_phoneImg(src="/img/tel.png")
+                div.card_foot
 
 
 
@@ -214,5 +269,6 @@ block content
 
 
 block js
+    script(src="/js/libs/jquery.mCustomScrollbar.min.js")
     script(src="/js/common/switchImg.js")
     script(src="/js/index.js")

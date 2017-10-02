@@ -26,12 +26,15 @@
 .adv_lb {
     display: inline-block;
     vertical-align: top;
-    width: 290px;
+    width: 320px;
     text-align: left;
-    background: #fff;
-    border-radius: 30px;
-    padding: 10px 15px;
+    border-radius: 20px;
     margin: 10px;
+    overflow-y: auto;
+    background: #866c51;
+    -webkit-box-shadow: inset 4px 4px 20px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 4px 4px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 4px 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 .adv_title {
@@ -39,15 +42,21 @@
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 36px;
+    color: #f5dfc7;
+    background-color: #232323;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .adv_desc {
-    color: #535353;
+    color: #f5dfc7;
     font-size: 14px;
     line-height: 22px;
     list-style-type: decimal;
     list-style-position: outside;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-right: 10px;
+    height: 350px;
+    overflow: auto;
 }
 
 .adv_desc p {
@@ -125,7 +134,7 @@
 }
 
 .sysItem {
-    margin-top: 16px;
+    margin-top: 24px;
     position: relative;
     text-align: center;
 }
@@ -259,4 +268,169 @@
 .service_foot {
     border-right: none;
     border-radius: 0;
+}
+
+/* 加盟优势 */
+.join_content {
+    position: relative;
+}
+
+.join_question {
+    min-height: 430px;
+}
+
+.questionImg {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    top: 70px;
+    margin-left: -100px;
+}
+
+.join_row {
+    margin: 60px auto 0;
+    width: 550px;
+    height: 54px;
+}
+
+.row2 {
+    margin-top: 30px;
+    width: 650px;
+}
+
+.row3 {
+    margin-top: 30px;
+    width: 600px;
+}
+
+.j_q_item_left {
+    float: left;
+    text-align: right;
+}
+
+.j_q_item_right {
+    float: right;
+    text-align: left;
+}
+
+.j_q_i_block {
+    width: 150px;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.bg_color1 {
+    background-color: #91ffdc;
+    box-shadow: 3px 3px 10px #666;
+}
+
+.bg_color2 {
+    background-color: #91ffdc;
+    box-shadow: 3px 3px 10px #666;
+}
+
+.bg_color3 {
+    background-color: #91ffdc;
+    box-shadow: 3px 3px 10px #666;
+}
+
+.bg_color4 {
+    background-color: #91ffdc;
+    box-shadow: -3px 3px 10px #666;
+}
+
+.bg_color5 {
+    background-color: #91ffdc;
+    box-shadow: -3px 3px 10px #666;
+}
+
+.bg_color6 {
+    background-color: #91ffdc;
+    box-shadow: -3px 3px 10px #666;
+}
+
+.join_solution_title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.join_solution_desc {
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #535352;
+}
+
+.join_solution_text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #535352;
+}
+
+.join_title {
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.join_desc {
+    line-height: 24px;
+    font-size: 18px;
+    text-align: center;
+    color: #ea5154;
+}
+
+.join_adv {
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #fffce1;
+}
+
+.join_adv_logo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.join_adv_c {
+    overflow: hidden;
+}
+
+.join_adv_c_left {
+    float: left;
+    padding: 30px 10px 0 10px;
+}
+
+.join_adv_c_right {
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.j_a_c_text {
+    font-size: 14px;
+    line-height: 180%;
+    color: #535352;
+    margin-top: 30px;
+}
+
+.j_a_c_eng {
+    font-size: 14px;
+    line-height: 180%;
+    color: #535352;
+}
+
+.j_a_c_phone {
+    float: right;
+    padding-right: 30px;
+    color: #535352;
+}
+
+.j_a_c_phoneImg {
+    float: right;
+    margin-right: 10px;
+    padding-top: 6px;
 }
