@@ -1,0 +1,69 @@
+extends layout/layout
+
+block css
+    link(rel='stylesheet', href='/css/card.css')
+    link(rel='stylesheet', href='/css/subpage.css')
+
+block content
+    div.content
+        div.center
+            div.left
+                div.left_nav
+                    div.left_nav_title 关于我们
+                    div.left_nav_item(data-to="article_1") 加盟条件
+                    div.left_nav_item(data-to="article_2") 加盟流程
+                    div.left_nav_item(data-to="article_3") 加盟方案
+                div.left_contact
+                    div.left_nav_title
+                        p.left_nav_title_min CONTACT US
+                        p 联系我们
+                    div.left_nav_c
+                        img.left_nav_c_img(src="/img/product/contact.jpg")
+                        p 加盟热线：0750-2203238
+                        p 中国地区指定服务地址：
+                        p 广东省开平市沿江东路131号春晓园首层105
+            div.right
+                div.article(id="article_1")
+                    p.article_h1 招商加盟
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 成为加盟商资格
+                        p.article_text 1、 有成熟的美容网络资源，医疗美容或口腔医院等相关行业经营者;
+                        p.article_text.article_indent 有口腔医疗经营许可证或二类医疗器械资格证的公司或企业。
+                        p.article_text.article_indent 法人营业执照副本复印件、个人身份证复印件、二类医疗器械资质
+                        p.article_text 2、加盟商权益保护：对加盟商经营范围内进行区域保护政策
+                        p.article_text 3、加盟商系统培训：提供MK项目市场前景解析、技术操作指导、总部美白师下店培训、
+                        p.article_text.article_indent 市场营销推广方案、经典案列介绍分析、相关宣传资料等资源。
+                        p.article_h2 招商加盟程序
+                        p.article_text 1、意向加盟商通过渠道方式了解MK项目，对市场前期考察并在其所在区域进行项目落地选址。
+                        p.article_text 2、意向加盟商发出加盟申请户，总公司进行信息审核。
+                        p.article_text 3、信息审核通过后获得MK公司直营工作室进行参观学习及牙齿美白SPA体验资格，书面签订加盟商合作协议成为合法加盟商。
+                        p.article_text 4、加盟商根据协议条款向总部打款，总部将启动套餐（包含产品、仪器及相关物资）发货到加盟地点。
+                        p.article_h2 招商加盟程序
+                        p.article_text 加盟套餐方案
+                        p.article_text.article_indent 1、加盟套餐一：￥49800
+                        p.article_text.article_indent 2、加盟套餐二：￥79800
+
+                div.article(id="article_2" style="display:none;")
+                    p.article_h1 加盟流程
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 招商加盟程序
+                        p.article_text 意向加盟商通过渠道方式了解MK项目，对市场前期考察并在其所在区域进行项目落地选址。
+                        p.article_text 意向加盟商发出加盟申请户，总公司进行信息审核。
+                        p.article_text 信息审核通过后获得MK公司直营工作室进行参观学习及牙齿美白SPA体验资格，书面签订加盟商合作协议成为合法加盟商。
+                        p.article_text 加盟商根据协议条款向总部打款，总部将启动套餐（包含产品、仪器及相关物资）发货到加盟地点。
+                div.article(id="article_3" style="display:none;")
+                    p.article_h1 加盟方案
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 加盟套餐方案：
+                        p.article_text.article_indent 1、加盟套餐一：￥49800
+                        p.article_text.article_indent 2、加盟套餐二：￥79800
+block js
+    script.
+        $(".left_nav_item").on("click",function(){
+            var to = $(this).data("to");
+            $(".article").hide();
+            $("#"+to).show();
+        })

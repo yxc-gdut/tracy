@@ -17,6 +17,7 @@ body {
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
+    height: 71px;
 }
 
 .logo {
@@ -210,4 +211,23 @@ body {
     display: inline-block;
     vertical-align: middle;
     margin-left: 5px;
+}
+
+/* 404 页面 */
+.errorText {
+    padding-top: 50px;
+    font-size: 100px;
+    line-height: 2em;
+    text-align: center;
+    color: #ea5154;
+    text-shadow: 1px 1px 2px #ea5154;
+}
+
+.errorDesc {
+    padding-bottom: 50px;
+    font-size: 24px;
+    line-height: 2em;
+    text-align: center;
+    color: #535352;
+    text-shadow: 1px 1px 3px #232321;
 }

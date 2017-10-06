@@ -1,0 +1,81 @@
+extends layout/layout
+
+block css
+    link(rel='stylesheet', href='/css/card.css')
+    link(rel='stylesheet', href='/css/subpage.css')
+
+block content
+    div.content
+        div.center
+            div.left
+                div.left_nav
+                    div.left_nav_title 产品优势
+                    div.left_nav_item(data-to="article_1") 产品优势
+                    div.left_nav_item(data-to="article_2") 投资优势
+                    div.left_nav_item(data-to="article_3") 运营优势
+                div.left_contact
+                    div.left_nav_title
+                        p.left_nav_title_min CONTACT US
+                        p 联系我们
+                    div.left_nav_c
+                        img.left_nav_c_img(src="/img/product/contact.jpg")
+                        p 加盟热线：0750-2203238
+                        p 中国地区指定服务地址：
+                        p 广东省开平市沿江东路131号春晓园首层105
+            div.right
+                div.article(id="article_1")
+                    p.article_h1 产品优势
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 产品优势：
+                        p.article_text 1、美国低温LED蓝色光源牙齿美白仪，独特牙齿比色功能，使用寿命10万个小时。
+                        p.article_text 2、低溶度食物级别20%CP非常安全，纯天然矿植物美白剂，不易灼伤牙龈，安全性高，订单式生产，无防腐剂和稳定剂添加，有效期2年，美白效果显著。
+                        p.article_text 3、无需牙龈保护剂，只需要维生素E油对口腔软组织进行保护，可有效对牙颈部进行美白处理。
+                        p.article_text 4、一个完整牙齿美白疗程为60分钟，可彻底的对牙齿进行脱色，不易产生反弹。
+                        p.article_text 5、除了LED蓝光牙齿美白仪外，无需其他口腔设备，如光固化机、吸唾器等。
+                        p.article_text 6、独特的美国进口专用的牙齿美白比色板。
+                        p.article_text 7、非治疗式牙齿美白，过程舒适，客户在美白时无任何疼痛反应。
+                        p.article_text 8、操作简单、护士即可。
+                        p.article_text 9、美白后疼痛指数低，客户重复消费高。
+                        p.article_text 10、植物牙齿美白理念更环保，更符合消费者心理。
+                        img.article_img(src="/img/advantage/smile.jpg")
+
+                div.article(id="article_2" style="display:none;")
+                    p.article_h1 投资优势
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 投资优势：
+                        p.article_text 1. 投资小，利润高
+                        p.article_text.article_indent a.根据不同情况不同地区，制定出不同价位的投资套餐。可根据自身需求选择最适合的价位套餐。
+                        p.article_text.article_indent b.该项目利润高，回报快，是一个可持续发展的项目。
+                        p.article_text &nbsp;
+                        p.article_text 2.项目市场需求大
+                        p.article_text.article_indent 在中国13亿人口中，烟民、牙齿发育不全和各种原因引起的牙齿发黄发黑问题比比皆是。这在中国是一个美容空白点，有巨大的市场利润空间。
+                        p.article_text &nbsp;
+                        p.article_text 3. 项目新颖、产品独特
+                        p.article_text.article_indent 因牙齿美白操作安全，程序简单等多种原因，被日韩等新型国家所广泛接受，成为了时下最热门的美容式牙齿美白护理。
+                        p.article_text.article_indent THEMIS瑞美斯 来源于美国，所用产品及技术是国内所未不具备的独特性产品。
+
+                div.article(id="article_3" style="display:none;")
+                    p.article_h1 运营优势
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 营销运营优势：
+                        p.article_text 1. 品牌推广模式多样
+                        p.article_text.article_indent a.通过线上网络推广及线下户外广告、活动策划等方式
+                        p.article_text.article_indent b.进行MK品牌形象推广及市场理念输送以达到提高MK品牌知名度的目的，从而让大众更好的接受这个崭新的品牌。
+                        p.article_text &nbsp;
+                        p.article_text 2. 提供全套系统培训及全套运营方案
+                        p.article_text.article_indent a.总部将结合市场需求及假期销售黄金期定期为加盟商策划一系列优惠活动以便快速吸收新客源。
+                        p.article_text.article_indent b.加盟商运营若出现问题可及时向总部上报，总部将应时给予解决方案。
+                        p.article_text &nbsp;
+                        p.article_text 3. 提供较充足的资源
+                        p.article_text.article_indent a.提供充足物料：如MK项目手册、操作手册、运营方案、百问百答、形象海报、产品介绍等物料支持。
+                        p.article_text.article_indent b.总部将尽所能为旗下加盟商提供最完善的系统性资源及专业指导。
+block js
+    script.
+        $(".left_nav_item").on("click",function(){
+            var to = $(this).data("to");
+            $(".article").hide();
+            $("#"+to).show();
+        })

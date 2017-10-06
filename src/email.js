@@ -26,17 +26,17 @@ function sendMail(params, success, error){
     var smtpTransport = getTransport();
     var mailOptions = {
         from: "yxc_gdut@aliyun.com", // 发件地址
-        to: "234537021@qq.com", // 收件列表
-        subject: "用户反馈 - 艾艾贴网站", // 标题
-        html: "<p><b>姓名：</b> "+params.name+"</p>"+
-                "<p><b>微信：</b> "+params.wechat+"</p>"+
+        to: "234537021@qq.com", // 收件列表?
+        subject: "用户反馈 - THEMIS-LIVE.COM", // 标题
+        html: "<h2>THEMIS-LIVE.COM用户反馈</h2>"+
+                "<p><b>名称：</b> "+params.name+"</p>"+
+                "<p><b>微信/QQ/邮箱：</b> "+params.wechat+"</p>"+
                 "<p><b>电话：</b> "+params.phone+"</p>"+
-                "<p><b>邮箱：</b> "+params.email+"</p>"+
                 "<p><b>内容：</b> "+params.content+"</p>"
     }
     // 发送邮件
-    smtpTransport.sendMail(mailOptions, function(error, response){
-        if(error){
+    smtpTransport.sendMail(mailOptions, function(err, response){
+        if(err){
             error();
         }else{
             success();

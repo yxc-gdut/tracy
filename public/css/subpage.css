@@ -1,0 +1,147 @@
+.content {
+    overflow: hidden;
+    padding-top: 45px;
+}
+
+.left {
+    float: left;
+    width: 25%;
+
+}
+
+.right {
+    overflow: hidden;
+}
+
+.left_nav {
+
+}
+
+.left_contact {
+
+}
+
+.left_nav_title {
+    background-color: #f5dfc7;
+    color: #464642;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 180%;
+    border-bottom: 1px solid #fff;
+}
+
+.left_nav_item {
+    background-color: #f0f0f0;
+    font-size: 16px;
+    line-height: 48px;
+    padding: 0 30px;
+    color: #464642;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    transition-duration: .8s;
+    transition-property: all;
+}
+
+.left_nav_item:hover {
+    background-color: #f5dfc7;
+}
+
+.left_nav_title_min {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.left_nav_c {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px 10px;
+    color: #535352;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.left_nav_c_img {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* 文章 */
+.article {
+    padding: 10px 20px;
+}
+
+.article_c {
+    padding-left: 10px;
+}
+
+.article_h1 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #333;
+    padding-left: 10px;
+}
+
+.article_bord {
+    height: 3px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 0;
+    font-size: 0;
+    background: -webkit-linear-gradient(left, #f79f79, #fff); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #f79f79, #fff); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #f79f79, #fff); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #f79f79, #fff); /* 标准的语法 */
+}
+
+.article_h2 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #464642;
+}
+
+.article_img {
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.article_text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.article_indent {
+    text-indent: 2em;
+}
+
+.article_form {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.article_form_item {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.article_input, .article_area {
+    width: 400px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.article_form_btn {
+    display: inline-block;
+    background: #464642;
+    color: #f5dfc7;
+    border-radius: 5px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,60 @@
+extends layout/layout
+
+block css
+    link(rel='stylesheet', href='/css/card.css')
+    link(rel='stylesheet', href='/css/subpage.css')
+
+block content
+    div.content
+        div.center
+            div.left
+                div.left_nav
+                    div.left_nav_title THEMIS瑞美斯技术
+                    div.left_nav_item(data-to="article_1") 产品
+                    div.left_nav_item(data-to="article_2") 技术
+                div.left_contact
+                    div.left_nav_title
+                        p.left_nav_title_min CONTACT US
+                        p 联系我们
+                    div.left_nav_c
+                        img.left_nav_c_img(src="/img/product/contact.jpg")
+                        p 加盟热线：0750-2203238
+                        p 中国地区指定服务地址：
+                        p 广东省开平市沿江东路131号春晓园首层105
+            div.right
+                div.article(id="article_1")
+                    p.article_h1 THEMIS瑞美斯产品
+                    div.article_bord
+                    div.article_c
+                        img.article_img(src="/img/product/machine.jpg")
+                        p.article_h2 THEMIS瑞美斯 产品来源于美国
+                        p.article_text 多年来，现代医学长期致力于牙齿美白治疗效果的提高，
+                        p.article_text 从普通漂白、贴面发展到冷光美白；随着临床应用的深入和科技的新一轮研发，
+                        p.article_text 欧美在冷光美白基础上衍生、发展出了更新、更完善的牙美白技术——牙齿美白理念。
+                        p.article_text 它是将独特的牙齿美白剂涂到牙齿表面，通过LED蓝光照射，产生催化作用，
+                        p.article_text 使释放出的活性氧快速改变色素碳环结构，从而去除牙齿表面及深层所附着的色素，达到美白的效果。
+                        p.article_text 它是一种不需要磨除天然牙就可以完成的安全的牙齿改变颜色的牙齿美白方法。
+                        p.article_text 独特的牙齿美白剂配方有效矿化牙釉质，牙齿在美白的基础上更加坚固、防龋，实现真正的健康白。
+                        p.article_text 低溶度食物级别20%CP非常安全，特别针对敏感牙齿。
+                        p.article_text 独特的配方纯净温和，不伤害牙釉质，效果极其显著。
+                        p.article_text 与35%高浓度的过氧化氢美白相比，避免出现疼痛而刺激牙釉质敏感的问题。
+                        p.article_text 因此整个美白过程安全、舒适、快捷、有效
+                div.article(id="article_2" style="display:none;")
+                    p.article_h1 THEMIS瑞美斯技术
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 牙齿美白机制属于一种“氧化还原”反应
+                        p.article_text 过氧化氢是一种强氧化剂，最常用于牙齿美白，它能释放高活性的O和HO在酸性环境下，可能形成更多的O。
+                        p.article_text 在漂白过程中，这些高反应性活性分子可渗透到牙釉质和牙本质的有机物中，5~15分钟内即可到达牙髓。
+                        p.article_text 这些活性分子不仅能清除牙齿外源性的色素从而改变牙釉质的颜色，还能改变由内源性着色引起的牙本质变色。
+                        p.article_text 参照AIbers于1991年的研究结果，在美白的初始过程中，深色的碳环复合物被打开，转化为浅色的链式结构。
+                        p.article_text 复式连接的碳复合物通常呈黄色，被打开后常转化为无色的羟基组。若此过程持续进行，牙齿就会越来越亮。
+                        p.article_text 但是，这一过程最终会达到一个饱和点，此时，及时再对牙齿进行漂白也不会影响它的颜色。
+                        img.article_img.mt10(src="/img/product/technology.jpg")
+block js
+    script.
+        $(".left_nav_item").on("click",function(){
+            var to = $(this).data("to");
+            $(".article").hide();
+            $("#"+to).show();
+        })

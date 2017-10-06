@@ -271,4 +271,7 @@ block content
 block js
     script(src="/js/libs/jquery.mCustomScrollbar.min.js")
     script(src="/js/common/switchImg.js")
-    script(src="/js/index.js")
+    script.
+        $(function () {
+            $(".js_scrollbar").mCustomScrollbar();
+        })

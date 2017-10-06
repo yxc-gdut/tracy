@@ -1,0 +1,64 @@
+extends layout/layout
+
+block css
+    link(rel='stylesheet', href='/css/card.css')
+    link(rel='stylesheet', href='/css/subpage.css')
+
+block content
+    div.content
+        div.center
+            div.left
+                div.left_nav
+                    div.left_nav_title 在线咨询
+                    div.left_nav_item(data-to="article_1") 在线咨询
+                div.left_contact
+                    div.left_nav_title
+                        p.left_nav_title_min CONTACT US
+                        p 联系我们
+                    div.left_nav_c
+                        img.left_nav_c_img(src="/img/product/contact.jpg")
+                        p 加盟热线：0750-2203238
+                        p 中国地区指定服务地址：
+                        p 广东省开平市沿江东路131号春晓园首层105
+            div.right
+                div.article(id="article_1")
+                    p.article_h1 在线咨询 ONLINE
+                    div.article_bord
+                    div.article_c
+                        div.article_form
+                            div.article_form_item
+                                input.article_input(id="name" name="name" placeholder="名字")
+                            div.article_form_item
+                                input.article_input(id="phone" name="phone" placeholder="手机")
+                            div.article_form_item
+                                input.article_input(id="wechat" name="wechat" placeholder="QQ/微信/邮箱")
+                            div.article_form_item
+                                textarea.article_area(id="content" name="content" placeholder="留言内容：")
+                            div.article_form_item
+                                button.article_form_btn(id="submitBtn") 立即提交
+block js
+    script.
+        $("#submitBtn").on("click", function () {
+            var name = $("#name").val()
+                , phone = $("#phone").val()
+                , wechat = $("#wechat").val()
+                , content = $("#content").val();
+
+            $.ajax({
+                url: "/api/contact",
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    name: name,
+                    phone: phone,
+                    wechat: wechat,
+                    content: content
+                },
+                success: function (data, textStatus) {
+                    alert("提交成功");
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("提交失败，请稍后再试")
+                }
+            })
+        })

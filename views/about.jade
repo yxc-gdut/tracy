@@ -1,0 +1,50 @@
+extends layout/layout
+
+block css
+    link(rel='stylesheet', href='/css/card.css')
+    link(rel='stylesheet', href='/css/subpage.css')
+
+block content
+    div.content
+        div.center
+            div.left
+                div.left_nav
+                    div.left_nav_title 关于我们
+                    div.left_nav_item(data-to="article_1") 关于我们
+                    div.left_nav_item(data-to="article_2") 发展历程
+                div.left_contact
+                    div.left_nav_title
+                        p.left_nav_title_min CONTACT US
+                        p 联系我们
+                    div.left_nav_c
+                        img.left_nav_c_img(src="/img/product/contact.jpg")
+                        p 加盟热线：0750-2203238
+                        p 中国地区指定服务地址：
+                        p 广东省开平市沿江东路131号春晓园首层105
+            div.right
+                div.article(id="article_1")
+                    p.article_h1 关于THEMIS瑞美斯
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 品牌介绍：
+                        p.article_text THEMIS瑞美斯 源自于美国，自创建起因操作简单、安全、高效等优势，被大众所广泛接受。
+                        p.article_text 在中国，作为美容项目正在渐渐崛起，市场潜力巨大。
+                        p.article_text THEMIS瑞美斯，提供的不仅是优质的产品，更是一个植物牙齿美白招商加盟平台。
+                        p.article_text THEMIS瑞美斯以其专业的技术，优质的产品，广阔的市场前景以及有力的加盟保障。
+                        p.article_text 为有梦想、敢拼敢闯的有志青年提供一个可以实现梦想的平台。
+                        p.article_text 在THEMIS瑞美斯，我们每个人的梦想，都可以从“齿”启航。
+                        p.article_h2 公司介绍：
+                        p.article_text THEMIS瑞美斯 源自于美国，自创建起因操作简单、安全、高效等优势，被大众所广泛接受。
+
+                div.article(id="article_2" style="display:none;")
+                    p.article_h1 发展历程
+                    div.article_bord
+                    div.article_c
+                        p.article_h2 发展历程
+block js
+    script.
+        $(".left_nav_item").on("click",function(){
+            var to = $(this).data("to");
+            $(".article").hide();
+            $("#"+to).show();
+        })
