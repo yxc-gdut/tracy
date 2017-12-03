@@ -17,9 +17,9 @@
 }
 
 .aboutPic {
-    background: url("/img/about.jpg");
-    width: 423px;
-    height: 317px;
+    background: url(/img/about.jpg) no-repeat;
+    width: 420px;
+    height: 279px;
 }
 
 /* 品牌优势 */
@@ -53,6 +53,7 @@
     line-height: 22px;
     list-style-type: decimal;
     list-style-position: outside;
+    padding-top: 20px;
     padding-left: 40px;
     padding-right: 10px;
     height: 350px;
@@ -105,7 +106,7 @@
 }
 
 .three_pic1 {
-    background: url("/img/about.jpg");
+    background: url("/img/three-pic1.jpg") no-repeat center;
     background-size: 320px;
     width: 320px;
     height: 150px;
@@ -113,15 +114,15 @@
 }
 
 .three_pic2 {
-    background: url("/img/about.jpg");
-    background-size: 320px;
+    background: url("/img/three-pic2.jpg") no-repeat;
+    background-size: 320px 150px;
     width: 320px;
     height: 150px;
     border-radius: 40px;
 }
 
 .three_pic3 {
-    background: url("/img/about.jpg");
+    background: url("/img/three-pic3.jpg") no-repeat center;
     background-size: 320px;
     width: 320px;
     height: 150px;
@@ -401,13 +402,18 @@
 }
 
 .join_adv_c_left {
-    float: left;
-    padding: 30px 10px 0 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .join_adv_c_right {
+    float: right;
     overflow: hidden;
     padding: 0 15px;
+}
+
+.j_a_c_r_img {
+    width: 500px;
+    margin-top: 60px;
 }
 
 .j_a_c_text {

@@ -1,0 +1,37 @@
+/* 手机端适配 */
+.head {
+    border-top: 4px solid #f79f79;
+}
+
+.head_top {
+    height: auto;
+    text-align: center;
+}
+
+.logo_phone {
+    text-align: right;
+    position: static;
+    padding-right: 20px;
+    color: #999;
+}
+
+.c_t_main {
+    padding-left: 0.5em;
+}
+
+/* 底部 */
+.f_center{
+    text-align: center;
+}
+
+.f_left {
+    float: none;
+    display: inline-block;
+}
+
+.f_middle{
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+

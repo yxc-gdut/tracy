@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'THEMIS 瑞美斯', selected:'index' });
 });
 
+router.get('/mobile', function(req, res, next) {
+  res.render('mobile', { title: 'THEMIS 瑞美斯', selected:'index' });
+});
+
 router.get('/product', function(req, res, next) {
   res.render('product', { title: 'THEMIS 瑞美斯', selected:'product' });
 });

@@ -1,0 +1,157 @@
+/* card 布局 */
+.card_foot {
+    height: auto;
+}
+
+.card_content {
+    padding: 10px;
+}
+
+/* 品牌 */
+.about_left {
+    width: auto;
+}
+
+.adv_content {
+    margin-top: 20px;
+}
+
+.adv_lb {
+    display: none;
+    vertical-align: top;
+    width: 320px;
+    text-align: left;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin: 10px;
+    overflow-y: auto;
+    background: #866c51;
+}
+
+.adv_content .touchslider-list {
+    text-align: left;
+}
+
+.adv_content .touchslider-item {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #f5dfc7;
+    background-color: #866c51;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.15);
+    transition-property: all;
+    transition-duration: 500ms;
+    display: inline-block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.adv_content .touchslider-item:active {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.adv_content .touchslider-item.on {
+    background-color: #232321;
+}
+
+/* 系统优势 */
+.sys_middle {
+    display: none;
+}
+
+.sys_content .touchslider-item {
+    text-align: center;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 36px;
+    color: #f5dfc7;
+    transition-property: all;
+    transition-duration: 500ms;
+    display: inline-block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid #f5dfc7;
+    border-bottom: 1px solid #fff;
+}
+
+.sys_content .touchslider-item:active {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.sys_content .touchslider-item.on {
+    background-color: #232321;
+}
+
+.sys_left {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    border: 1px solid #f79f79;
+    width: auto;
+    height: 80px;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 80px;
+    margin-right: 0;
+    color: #535352;
+    margin-top: 20px;
+}
+
+.sys_right {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    width: auto;
+    height: 80px;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 80px;
+    color: #535352;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+}
+
+/* 服务优势 */
+.questionImg {
+    width: 80px;
+    margin-left: -40px;
+    top: 160px;
+    z-index: -1;
+}
+
+.join_row {
+    margin: 60px auto 0;
+    width: auto;
+    height: 54px;
+}
+
+.row2 {
+    margin-top: 30px;
+    width: auto;
+}
+
+.row3 {
+    margin-top: 30px;
+    width: auto;
+}
+
+.j_q_i_block {
+    width: 140px;
+}
+
+.row2 .j_q_i_block {
+    width: 100px;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.j_a_c_r_img {
+    width: 100%;
+    margin-top: 60px;
+}
+

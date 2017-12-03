@@ -7,10 +7,11 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/css/common/base.css')
     link(rel='stylesheet', href='/css/common/layout.css')
+    link(rel='stylesheet', href='/css/common/mobile_layout.css')
     block css
 
   body
-    include ./head
+    include ./mobile_head
     block content
 
     //div(class="floatWin")
@@ -25,8 +26,6 @@ html
     //    span.fw_item_label 电话:
     //    span.fw_item_value 18923842830
 
-    include ./foot
+    include ./mobile_foot
     script(src="/js/libs/jquery.min.js")
-    script(src="/js/common/nav.js")
-    script(src="/js/common/common.js")
     block js

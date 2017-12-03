@@ -1,27 +1,15 @@
-extends layout/layout
+extends layout/mobile_layout
 
 block css
     link(rel='stylesheet', href='/css/common/switchImg.css')
+    link(rel='stylesheet', href='/css/libs/tab.min.css')
     link(rel='stylesheet', href='/css/card.css')
     link(rel='stylesheet', href='/css/index.css')
+    link(rel='stylesheet', href='/css/mobile.css')
     link(rel='stylesheet', href='/css/libs/jquery.mCustomScrollbar.min.css')
 
 block content
     div.content
-        div.switchImg(id="switchImg")
-            ul.imgList
-                li.imgItem.js_currentImg(id="switchImg_0")
-                    img.imgItem_img(src="img/1.jpg")
-                li.imgItem(id="switchImg_1")
-                    img.imgItem_img(src="img/2.jpg")
-                li.imgItem(id="switchImg_2")
-                    img.imgItem_img(src="img/3.jpg")
-            div.location( id="location")
-                ul
-                    li.location_item(id="lo_switchImg_0" data-id="switchImg_0") 1
-                    li.location_item(id="lo_switchImg_1" data-id="switchImg_1") 2
-                    li.location_item(id="lo_switchImg_2" data-id="switchImg_2") 3
-
         // 品牌
         div.card
             div.center
@@ -52,40 +40,45 @@ block content
                     p.c_c_title 专注牙齿美白技术
                     p.c_c_sub Focus on tooth whitening technology
                     div.adv_content
-                        div.adv_lb
-                            div.adv_title 企业核心竞争力
-                            ol.adv_desc
-                                li.adv_item 来自美国，生活植物牙齿美白
-                                li.adv_item 项目新颖，产品独特
-                                li.adv_item 操作简单、安全、高效
-                                li.adv_item 提供总部美白师进行下店操作指导
-                                li.adv_item 资源充足，发展平台广阔
-                                li.adv_item 市场前景广阔，可持续发展性强
-                                li.adv_item 投资少，利润高，无加盟费
-                                li.adv_item 提供全套系统培训
-                                li.adv_item 提供全套运营方案
-                                li.adv_item 提供全套品牌推广方案
-                                li.adv_item 提供全套项目手册及宣传资料
-                                li.adv_item 提供三大新型系统支持
-                                li.adv_item 美白疼痛指数低、客户重复消费高
-                                li.adv_item 植物牙齿美白理念更环保，符合消费者心理
-                                li.adv_item 于现有更好服务客户，快速吸收新客源。
-                        div.adv_lb
-                            div.adv_title 品牌市场前景广阔
-                            ol.adv_desc.js_scrollbar
-                                li.adv_item 从市场需求看：
-                                    p 牙齿美白正成为一种时尚。在美国，美白牙齿是一种美容而非治疗，美国人在牙齿美白的消费上一年已近100亿。而在中国13亿人口中，烟民、牙齿发育不全和各种原因引起的牙齿发黄发黑问题比比皆是。这在中国是一个美容空白点，有巨大的市场利润空间。
-                                    p 我公司就此对此项目将提供系统的全套培训，让你在牙齿美白营销行业抓住这个时代最好的契机，成为招牌项目，迅速的达到资金翻倍的盈利状况。
-                                p &nbsp;
-                                li.adv_item 从发展角度看：
-                                    p 牙齿美在外国，如果说“眼睛是心灵的窗户，牙齿则是生意场的敲门砖”。
-                                    p 那些需要时常面带微笑的服务性行业，都会在招聘启事上写上：“应聘者必须有一口漂亮、整齐的牙齿”。普通职业的招聘，如果有一口整齐洁白的牙齿，在应聘时要比牙齿欠佳的竞争者占优势。几乎所有的美剧里面不管帅的丑的，年纪多大，牙齿都白的发亮。走在街头，几乎所有美国人都有着一口整齐洁白的牙齿。商店服务员、图书馆管理员、警察、教师，甚至公共汽车司机，都面带令人赏心悦目的微笑。牙齿，像一切奢侈品一样，已被外国人视为身份和生活态度的外在表现。
-                        div.adv_lb
-                            div.adv_title 产品见效快、持久
-                            ol.adv_desc
-                                li.adv_item 低溶度食物级别20%CP非常安全，纯天然矿植物美白剂，不易灼伤牙龈，安全性高，订单式生产，无防腐剂和稳定剂添加，有效期2年，美白效果显著
-                                li.adv_item 一个完整牙齿美白疗程为60分钟，可彻底的对牙齿进行脱色，不易产生反弹。
-                                li.adv_item 非治疗式牙齿美白，过程舒适，客户在美白时无任何疼痛反应。
+                        div.touchslider(id="adv_slider")
+                            div.hd
+                                ul.touchslider-list
+                                    li.touchslider-item.on 核心竞争力
+                                    li.touchslider-item 品牌前景
+                                    li.touchslider-item 产品效果
+                            div.bd
+                                ul
+                                    li.touchslider-nav-item.touchslider-nav-item-current.adv_lb
+                                        ol.adv_desc
+                                            li.adv_item 来自美国，生活植物牙齿美白
+                                            li.adv_item 项目新颖，产品独特
+                                            li.adv_item 操作简单、安全、高效
+                                            li.adv_item 提供总部美白师进行下店操作指导
+                                            li.adv_item 资源充足，发展平台广阔
+                                            li.adv_item 市场前景广阔，可持续发展性强
+                                            li.adv_item 投资少，利润高，无加盟费
+                                            li.adv_item 提供全套系统培训
+                                            li.adv_item 提供全套运营方案
+                                            li.adv_item 提供全套品牌推广方案
+                                            li.adv_item 提供全套项目手册及宣传资料
+                                            li.adv_item 提供三大新型系统支持
+                                            li.adv_item 美白疼痛指数低、客户重复消费高
+                                            li.adv_item 植物牙齿美白理念更环保，符合消费者心理
+                                            li.adv_item 于现有更好服务客户，快速吸收新客源。
+                                    li.touchslider-nav-item.adv_lb
+                                        ol.adv_desc.js_scrollbar
+                                            li.adv_item 从市场需求看：
+                                                p 牙齿美白正成为一种时尚。在美国，美白牙齿是一种美容而非治疗，美国人在牙齿美白的消费上一年已近100亿。而在中国13亿人口中，烟民、牙齿发育不全和各种原因引起的牙齿发黄发黑问题比比皆是。这在中国是一个美容空白点，有巨大的市场利润空间。
+                                                p 我公司就此对此项目将提供系统的全套培训，让你在牙齿美白营销行业抓住这个时代最好的契机，成为招牌项目，迅速的达到资金翻倍的盈利状况。
+                                            p &nbsp;
+                                            li.adv_item 从发展角度看：
+                                                p 牙齿美在外国，如果说“眼睛是心灵的窗户，牙齿则是生意场的敲门砖”。
+                                                p 那些需要时常面带微笑的服务性行业，都会在招聘启事上写上：“应聘者必须有一口漂亮、整齐的牙齿”。普通职业的招聘，如果有一口整齐洁白的牙齿，在应聘时要比牙齿欠佳的竞争者占优势。几乎所有的美剧里面不管帅的丑的，年纪多大，牙齿都白的发亮。走在街头，几乎所有美国人都有着一口整齐洁白的牙齿。商店服务员、图书馆管理员、警察、教师，甚至公共汽车司机，都面带令人赏心悦目的微笑。牙齿，像一切奢侈品一样，已被外国人视为身份和生活态度的外在表现。
+                                    li.touchslider-nav-item.adv_lb
+                                        ol.adv_desc
+                                            li.adv_item 低溶度食物级别20%CP非常安全，纯天然矿植物美白剂，不易灼伤牙龈，安全性高，订单式生产，无防腐剂和稳定剂添加，有效期2年，美白效果显著
+                                            li.adv_item 一个完整牙齿美白疗程为60分钟，可彻底的对牙齿进行脱色，不易产生反弹。
+                                            li.adv_item 非治疗式牙齿美白，过程舒适，客户在美白时无任何疼痛反应。
                 div.card_foot
 
         // 三大优势
@@ -108,12 +101,12 @@ block content
                                 div.three_pic1
                         div
                             div.three_left
-                                div.three_pic2
-                            div.three_right
                                 p.c_c_title.three_title 效果
                                 p.three_desc 一次美白4-8个色阶 效果立杆见效
                                 p.three_desc 两次美白6-10个色阶 过程安全舒适
                                 p.three_desc 三次美白8-14个色阶 美白效果持久
+                            div.three_right
+                                div.three_pic2
                         div
                             div.three_left.bg_blue
                                 p.c_c_title.three_title 价格实惠
@@ -133,46 +126,55 @@ block content
                 div.card_content
                     p.c_c_sub 成分安全健康、不损害牙齿结构、零损伤、无刺激和牙龈保护剂说再见、简单、易操作。MISSKING得到安全和效果认证的先进美白系统，纯天然矿植物美白剂安全、高效；植物牙齿美白理念环保、快捷。
                     div.sys_content
-                        div.sysItem
-                            div.sys_left
-                                div.sys_left_logo Themis 瑞美斯
-                                div.sys_left_text
-                                    span 通过
-                                    span.bold 美白剂里的氧
-                                    span 进入牙齿内部祛除色素沉着 长期使用的话，不但不会对牙齿造成伤害，还 能给口腔杀菌，达到保护牙齿的功效
-                            div.sys_middle.bg_yellow 美白原理
-                            div.sys_right
-                                div.sys_right_logo 其他产品
-                                div.sys_left_text 通过酸性物质漂白牙齿的牙釉质来达到美白效果,长期接受这种美白的话,会导致牙齿表面的钙被分解掉从而对牙齿造成伤害
-                        div.sysItem
-                            div.sys_left
-                                div.sys_left_logo Themis 瑞美斯
-                                div.sys_left_text 美白管理一次15分钟，可以连续做3次，让牙齿在打开牙小管缝隙的状态下充分与美白剂发挥功效，达到由内而外的透亮白皙。
-                            div.sys_middle.bg_white 美白时间
-                            div.sys_right
-                                div.sys_right_logo 其他产品
-                                div.sys_left_text 不能超过15分钟.原因是用漂白来达到美白牙齿的功效，美白的时间越长对牙齿的伤害就越大。所以只能不超过15分钟的美白时间
-                        div.sysItem
-                            div.sys_left
-                                div.sys_left_logo Themis 瑞美斯
-                                div.sys_left_text
-                                    span 美白效果可持续在
-                                    span.bold 2年左右
-                            div.sys_middle.bg_blue 效果持续时间
-                            div.sys_right
-                                div.sys_right_logo 其他产品
-                                div.sys_left_text 一般是6个月左右
-                        div.sysItem
-                            div.sys_left
-                                div.sys_left_logo Themis 瑞美斯
-                                div.sys_left_text
-                                    span 针对
-                                    span.bold 亚洲人
-                                    span 的牙齿结构
-                            div.sys_middle.bg_pink 客户人群
-                            div.sys_right
-                                div.sys_right_logo 其他产品
-                                div.sys_left_text 针对西方人的牙齿结构
+                        div.touchslider(id="sys_slider")
+                            div.hd
+                                ul.touchslider-list
+                                    li.touchslider-item.on 美白原理
+                                    li.touchslider-item 美白时间
+                                    li.touchslider-item 效果持续时间
+                                    li.touchslider-item 客户人群
+                            div.bd
+                                ul
+                                    div.sysItem.touchslider-nav-item.touchslider-nav-item-current
+                                        div.sys_left
+                                            div.sys_left_logo Themis 瑞美斯
+                                            div.sys_left_text
+                                                span 通过
+                                                span.bold 美白剂里的氧
+                                                span 进入牙齿内部祛除色素沉着 长期使用的话，不但不会对牙齿造成伤害，还 能给口腔杀菌，达到保护牙齿的功效
+                                        div.sys_middle.bg_yellow 美白原理
+                                        div.sys_right
+                                            div.sys_right_logo 其他产品
+                                            div.sys_left_text 通过酸性物质漂白牙齿的牙釉质来达到美白效果,长期接受这种美白的话,会导致牙齿表面的钙被分解掉从而对牙齿造成伤害
+                                    div.sysItem.touchslider-nav-item
+                                        div.sys_left
+                                            div.sys_left_logo Themis 瑞美斯
+                                            div.sys_left_text 美白管理一次15分钟，可以连续做3次，让牙齿在打开牙小管缝隙的状态下充分与美白剂发挥功效，达到由内而外的透亮白皙。
+                                        div.sys_middle.bg_white 美白时间
+                                        div.sys_right
+                                            div.sys_right_logo 其他产品
+                                            div.sys_left_text 不能超过15分钟.原因是用漂白来达到美白牙齿的功效，美白的时间越长对牙齿的伤害就越大。所以只能不超过15分钟的美白时间
+                                    div.sysItem.touchslider-nav-item
+                                        div.sys_left
+                                            div.sys_left_logo Themis 瑞美斯
+                                            div.sys_left_text
+                                                span 美白效果可持续在
+                                                span.bold 2年左右
+                                        div.sys_middle.bg_blue 效果持续时间
+                                        div.sys_right
+                                            div.sys_right_logo 其他产品
+                                            div.sys_left_text 一般是6个月左右
+                                    div.sysItem.touchslider-nav-item
+                                        div.sys_left
+                                            div.sys_left_logo Themis 瑞美斯
+                                            div.sys_left_text
+                                                span 针对
+                                                span.bold 亚洲人
+                                                span 的牙齿结构
+                                        div.sys_middle.bg_pink 客户人群
+                                        div.sys_right
+                                            div.sys_right_logo 其他产品
+                                            div.sys_left_text 针对西方人的牙齿结构
                 div.card_foot
 
 
@@ -271,8 +273,21 @@ block content
 
 block js
     script(src="/js/libs/jquery.mCustomScrollbar.min.js")
-    script(src="/js/common/switchImg.js")
+    script(src="/js/libs/TouchSlide.1.1.js")
     script.
         $(function () {
-            $(".js_scrollbar").mCustomScrollbar();
+            TouchSlide({
+                slideCell: "#adv_slider",
+                titCell: ".hd ul li", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell: ".bd ul",
+                effect: "leftLoop",
+                autoPlay: false //自动播放
+            });
+            TouchSlide({
+                slideCell: "#sys_slider",
+                titCell: ".hd ul li", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell: ".bd ul",
+                effect: "leftLoop",
+                autoPlay: false //自动播放
+            });
         })
