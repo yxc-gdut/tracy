@@ -1,7 +1,7 @@
 .switchImg {
     position: relative;
     margin: 40px auto 0;
-    /*width: 980px;*/
+    width: 1250px;
 }
 
 .imgList {
@@ -27,7 +27,7 @@
 .location {
     position: absolute;
     bottom: 20px;
-    right: 30px;
+    right: 10%;
 }
 
 .location_item {
