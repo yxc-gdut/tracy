@@ -5,6 +5,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var useragent = require('express-useragent');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -17,6 +18,7 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(useragent.express());
 app.use(compression());
 app.use(logger('dev'));
 app.use(bodyParser.json());
